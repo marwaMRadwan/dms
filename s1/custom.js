@@ -180,20 +180,105 @@ const f3 = (z)=>{
 // let a = x(5)
 // console.log(a.data)
 
-const myArrayMethods = (arr) => {
-    return{
-        arr,
-        myForEach:(cb)=>{
-            for(let i=0; i<arr.length; i++){
-                cb(arr[i], i, arr)
-            }
-        },
-        myIndex:()=>{}
-    }
-}
+// const myArrayMethods = (arr) => {
+//     return{
+//         arr,
+//         myForEach:(cb)=>{
+//             for(let i=0; i<arr.length; i++){
+//                 cb(arr[i], i, arr)
+//             }
+//         },
+//         myIndex:()=>{}
+//     }
+// }
 
-let x = myArrayMethods([1,2,3,4])
-x.myForEach((el, i, arr)=> console.log(el , " - ", i, arr))
+// let x = myArrayMethods([1,2,3,4])
+// x.myForEach((el, i, arr)=> console.log(el , " - ", i, arr))
+
+
+
+// setTimeout(()=>{ console.log(1) }, 3000)
+// setTimeout(()=>{ console.log(2) }, 1500)
+// setTimeout(()=>{ console.log(3) }, 2000)
+// setTimeout(()=>{ console.log(4) }, 1000)
+// console.log(5)
+
+
+//promise
+// const myPro = (val) =>{
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             if(val>5) resolve("number greater than 5")
+//             else reject("invalid number")
+//         },2000)
+//     })
+// }
+
+// myPro(2)
+// .then(response =>  console.log(response) )
+// .catch(err => console.log(err))
+
+// async function d(){
+
+// }
+// const d = async function(){}
+// const d = async() =>{
+//     try{
+//         let r = await myPro(5)
+//         console.log(r)
+//         let z = await myPro(15)
+//         console.log(z)
+//         await myPro(1)
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+
+// === ==
+
+// 5 === "5"
+
+// api call
+// const url = "https://jsonplaceholder.typicode.com/todos?_limit=10"
+// async function getData(cb){
+//     try{
+//         // let data = await fetch(url)
+//         // let res = await data.json()
+//         // console.log(res);
+//         let data = await (await fetch( url )).json()
+//         // console.log(data)
+//         cb(data, null)
+//     }
+//     catch(e){
+//         console.log(e.message)
+//         cb(null, e.message)
+//     }
+// }
+// getData( (res, err)=>{
+//     if(err) return console.log(err)
+//     console.log(res)
+// })
+
+
+// const dataWrap = document.querySelector("#dataWrap")
+// if(dataWrap) dataWrap.innerHTML="Hello"
+// console.log(dataWrap)
+
+
+// const user = {
+//     name: "marwa",
+//     age: 39,
+//     email:"marwa@techsexperts.com"
+// }
+
+// // localStorage.setItem("userData", JSON.stringify(user))
+
+// const data = JSON.parse(localStorage.getItem("userData"))
+// console.log(data)
+
+
+
 
 
 
