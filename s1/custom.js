@@ -80,75 +80,126 @@ const f3 = (z)=>{
 //     console.log(element);
 // });
 
-const todos = [
-    {
-    userId: 1,
-    id: 1,
-    title: "delectus aut autem",
-    completed: false
-    },
-    {
-    userId: 1,
-    id: 2,
-    title: "quis ut nam facilis et officia qui",
-    completed: false
-    },
-    {
-    userId: 1,
-    id: 3,
-    title: "fugiat veniam minus",
-    completed: false
-    },
-    {
-    userId: 1,
-    id: 4,
-    title: "et porro tempora",
-    completed: true
-    },
-    {
-    userId: 1,
-    id: 5,
-    title: "laboriosam mollitia et enim quasi adipisci quia provident illum",
-    completed: false
-    },
-    {
-    userId: 1,
-    id: 6,
-    title: "qui ullam ratione quibusdam voluptatem quia omnis",
-    completed: false
-    },
-    {
-    userId: 1,
-    id: 7,
-    title: "illo expedita consequatur quia in",
-    completed: false
-    },
-    {
-    userId: 1,
-    id: 8,
-    title: "quo adipisci enim quam ut ab",
-    completed: true
-    },
-    {
-    userId: 1,
-    id: 9,
-    title: "molestiae perspiciatis ipsa",
-    completed: false
-    },
-    {
-    userId: 1,
-    id: 10,
-    title: "illo est ratione doloremque quia maiores aut",
-    completed: true
-    }
-    ]
+// const todos = [
+//     {
+//     userId: 1,
+//     id: 1,
+//     title: "delectus aut autem",
+//     completed: false
+//     },
+//     {
+//     userId: 1,
+//     id: 2,
+//     title: "quis ut nam facilis et officia qui",
+//     completed: false
+//     },
+//     {
+//     userId: 1,
+//     id: 3,
+//     title: "fugiat veniam minus",
+//     completed: false
+//     },
+//     {
+//     userId: 1,
+//     id: 4,
+//     title: "et porro tempora",
+//     completed: true
+//     },
+//     {
+//     userId: 1,
+//     id: 5,
+//     title: "laboriosam mollitia et enim quasi adipisci quia provident illum",
+//     completed: false
+//     },
+//     {
+//     userId: 1,
+//     id: 6,
+//     title: "qui ullam ratione quibusdam voluptatem quia omnis",
+//     completed: false
+//     },
+//     {
+//     userId: 1,
+//     id: 7,
+//     title: "illo expedita consequatur quia in",
+//     completed: false
+//     },
+//     {
+//     userId: 1,
+//     id: 8,
+//     title: "quo adipisci enim quam ut ab",
+//     completed: true
+//     },
+//     {
+//     userId: 1,
+//     id: 9,
+//     title: "molestiae perspiciatis ipsa",
+//     completed: false
+//     },
+//     {
+//     userId: 1,
+//     id: 10,
+//     title: "illo est ratione doloremque quia maiores aut",
+//     completed: true
+//     }
+//     ]
 
     // todos.forEach(todo => {
     //     console.log(todo.id);
     // })
 
-let result = todos.filter( el => el.id == 5 )
-console.log(result)
+// let result = todos.filter( el => el.id == 5 )
+// console.log(result)
+
+
+// callbacks
+// const x  = ( cb ) => {
+//     (()=>{
+//         cb("inner function")
+//     })()
+//     //cb ("outer function")
+// }
+// x( res => console.log(res) )
+
+// arr.forEach(element, i, a => {
+    
+// });
+
+
+// const x = (data)=>{
+//     return{
+//         data,
+//         add: ()=> {
+//             return data + 5
+//         },
+//         sub: ()=> {
+//             return data -3
+//         }
+//     }
+// } 
+
+// let a = x(5)
+// console.log(a.data)
+
+const myArrayMethods = (arr) => {
+    return{
+        arr,
+        myForEach:(cb)=>{
+            for(let i=0; i<arr.length; i++){
+                cb(arr[i], i, arr)
+            }
+        },
+        myIndex:()=>{}
+    }
+}
+
+let x = myArrayMethods([1,2,3,4])
+x.myForEach((el, i, arr)=> console.log(el , " - ", i, arr))
+
+
+
+
+
+
 
 
 
