@@ -47,14 +47,65 @@
 //     ["ma",7]
 // ]
 // enum
-var Months;
-(function (Months) {
-    Months[Months["jan"] = 10] = "jan";
-    Months[Months["feb"] = 11] = "feb";
-    Months[Months["Mar"] = 12] = "Mar";
-    Months[Months["Apr"] = 13] = "Apr";
-    Months[Months["May"] = 14] = "May";
-    Months[Months["false"] = 15] = "false";
-})(Months || (Months = {}));
-console.log(Months[10]);
-console.log(Months["jan"]);
+// enum Months { jan = 10, feb=13, Mar, Apr, May, false }
+// // console.log(Months[10]);
+// // console.log(Months["jan"]);
+// if(Months[10] == "jan")
+//control statements
+// if(true){ }
+// else if(false){}
+// else{}
+// let month: number | string =1
+// month = "1"
+// if(typeof month == "string"){
+//     switch (month){
+//         case "1": break;
+//     }
+// }
+// else{
+//     switch (month){
+//         case 1: break;
+//     }
+// }
+// for while do while 
+// for(; ;){
+// }
+// let num =5
+// while(true){
+//     if( num !=5) continue
+//     num = 3
+// }
+// function x() : number|string{
+//     return 9
+// }
+// const myFun = (a:number|string=1, b:string|null="bd", c: string[]=[]):number =>{
+//     return 8
+// }
+// myFun("m", "jh")
+// myFun("a", null, ["gh", "hg"])
+// let d = new Date()
+// console.log(d)
+// type myX = number|string
+// function myFun (b:number , ...a: myX[] ){
+//     // a = [ "hhu", 5, 5, "hg"]
+//     a.forEach(el=> console.log(el))
+// }
+// myFun(1, "hhu", 5, 5, "hg")
+// function Car(palteNum, Model){
+//     this.palteNum = palteNum
+//     this.Model = Model
+// }
+// Car.prototype.getData= function(){
+//     console.log(this.palteNum)
+// }
+// let c = new Car("a", "b")
+// c.getData()
+var Car1 = /** @class */ (function () {
+    function Car1(palteNum, Model, x) {
+        if (x === void 0) { x = 0; }
+        this.palteNum = palteNum;
+        this.Model = Model;
+    }
+    return Car1;
+}());
+var c1 = new Car1(5, "b");
