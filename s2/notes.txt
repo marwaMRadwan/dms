@@ -2,6 +2,13 @@ https://www.typescripttutorial.net/
 https://www.typescriptlang.org/
 
 
+npm -v   //-version
+tsc -v
+node -v 
+
+// npm install  
+npm i
+
 - what and why typescript
 - setup
 - render
