@@ -1,0 +1,13 @@
+https://www.typescripttutorial.net/
+https://www.typescriptlang.org/
+
+
+- what and why typescript
+- setup
+- render
+- basic types
+- control flow
+- functions
+- classes
+- interfaces
+
