@@ -13,7 +13,12 @@ export class User{
         this.dob =dob
         this.phone = phone;
     }
+    set _id(val:number){
+        this.id= val
+    }
+    get _id():number{ return this.id}
     getData(){
-        console.log("from user")
+        console.log(this._id)
     }
 }
+// c._id = 5
