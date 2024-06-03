@@ -1,0 +1,96 @@
+<!-- <app-navbar *ngIf="true"/> -->
+<!--<router-outlet />
+<app-footer /> -->
+
+<!-- <h3>Binding</h3>
+<h4>Interpolation</h4>
+<li>{{ title }}</li>
+<li>{{ 5 * 3 }}</li>
+<li>{{ show() }}</li>
+<li>{{ 5>3 ? 5 : 6}}</li>
+<img src="my/{{imgSrc}}">
+ <li>{{myHtml}}</li>
+<h3>
+    property binding
+</h3>
+<img [src]="'my/'+imgSrc">
+<div [innerHTML]="myHtml"></div>
+
+<h3>Event binding</h3>
+<div (click)="hello()">hello</div> -->
+
+<!-- <section [ngClass]="'container mt-5'">
+    <input class="form-control" (input)="getData($event)">
+    <p>{{val}}</p>
+</section>
+<br><br><br>
+<section [ngClass]="'container mt-5'">
+    <input class="form-control" [(ngModel)]="val">
+    <p>{{val}}</p>
+</section> -->
+
+
+<!-- test -->
+
+<!-- <div class="container my-5"> -->
+    <!-- <div class="col-3 border border-2" *ngFor="let ele of data">
+        <p>{{ele.id}}</p>
+        <p>{{ele.title}}</p>
+        <p>{{ele.completed}}</p>
+        <p>{{ele.userId}}</p>
+    </div> -->
+    <!-- <table class="table table-stripped">
+        <thead>
+            <tr>
+                <td>index</td>
+                <td>first</td>
+                <td>last</td>
+                <td>odd</td>
+                <td>even</td>
+                <th>id</th>
+                <th>title</th>
+                <th>completed</th>
+                <th>user id</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let myele of data; 
+            let i = index;
+            let f = first;
+            let l = last;
+            let o = odd;
+            let e = even
+            "
+            [ngClass]="{ 'myOdd' : o,  'myEven':e}"
+            >
+                <td>{{ i + 1 }}</td>
+                <td>{{ f }}</td>
+                <td>{{ l }}</td>
+                <td *ngIf="o">{{ o }}</td>
+                <td>{{ e }}</td>
+                <td>{{myele.id}}</td>
+                <td>{{myele.title}}</td>
+                <td>{{myele.completed}}</td>
+                <td>{{myele.userId}}</td>
+            </tr>
+        </tbody>
+    </table>
+<hr>
+    <div>
+        <p [ngClass]="{'text-success': isA, 'text-danger': isB, 'text-secondry': isC}"> test actions </p>
+        <input type="checkbox" [(ngModel)]="isA"> is a<br>
+        <input type="checkbox" [(ngModel)]="isB"> is b<br>
+        <input type="checkbox" [(ngModel)]="isC"> is c<br>
+    </div>
+
+    <input [type]="inT">
+    <button class="btn btn-primary" (click)="chngType()">
+        {{showHide}}
+    </button>
+-->
+<!-- </div> -->
+
+<app-navbar *ngIf="_global.hasNav"/>
+<router-outlet />
+<app-footer />

@@ -1,0 +1,8 @@
+//create app
+ng new appName --standalone=false
+// install bootstrap
+npm i bootstrap
+//install all node modules
+npm install
+// create comp
+ng g c compName // or path   pages/sub/name
