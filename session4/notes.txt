@@ -1,0 +1,18 @@
+//install bootstrap
+npm i bootstrap
+// add to build in angular.json
+
+//install fontawsome
+npm install --save @fortawesome/fontawesome-free
+
+//install ngx-bootstrap
+npm install ngx-bootstrap --f
+
+
+//in app module
+import :
+FormsModule,
+ReactiveFormsModule
+
+in provider
+provideHttpClient()
