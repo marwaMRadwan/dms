@@ -3,7 +3,7 @@ npm i bootstrap
 // add to build in angular.json
 
 //install fontawsome
-npm install --save @fortawesome/fontawesome-free
+npm install  @fortawesome/fontawesome-free
 
 //install ngx-bootstrap
 npm install ngx-bootstrap --f

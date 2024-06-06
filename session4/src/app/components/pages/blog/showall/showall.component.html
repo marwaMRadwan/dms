@@ -1,0 +1,36 @@
+<!-- <ng-template #noData>No Data Yet</ng-template>
+<ng-template #loading>loading</ng-template>
+<ng-template #hasErr>Error in request</ng-template>
+<ng-template #myElse>
+    <div *ngIf="hasErrro!=''; else ; then hasErr">Error found</div>
+    <div *ngIf="hasErrro == '' ">{{allBlog|json}}</div>
+    <div *ngIf="hasErrro == '' && !allBlog.length">No Data Found</div>
+</ng-template>
+
+<div *ngIf="!isLoaded; else myElse; then loading"></div>
+
+
+
+<div *ngIf="hasErrro"
+<p>showall works!</p>
+<div *ngIf="isLoaded && allBlog; else elseBlock">
+    <div *ngIf="allBlog.length ; else noData">
+        {{ allBlog | json }}
+    </div>
+</div>
+
+<p *ngIf="hasErrro!=''">{{ hasErrro }}</p> --> 
+
+<div *ngIf="!isLoaded">Loading NOw</div>
+<div *ngIf="isLoaded">
+    <div *ngIf="!allBlog.length">No Data Yet</div>
+    <div>
+        <li *ngFor="let b of allBlog" routerLink="/blog/{{b.id}}">
+            {{b.title | uppercase}}
+        </li>
+    </div>
+</div>
+
+{{myDate | date:'yyyy'}}
+
+
