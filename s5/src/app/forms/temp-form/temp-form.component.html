@@ -1,0 +1,14 @@
+<form #add="ngForm" (ngSubmit)="addMe(add)">
+    {{add.value |json }}
+    {{ add.submitted }}
+    <input name="name" placeholder="name" ngModel #name="ngModel" [(ngModel)]="x">
+{{name.value}}
+{{name.dirty}}
+{{name.valid}}
+{{name.invalid}}
+    <input name="email" placeholder="email" ngModel #myEmail="ngModel">
+    <input name="age" placeholder="age" ngModel>
+    <button type="submit">add</button>
+</form>
+
+<input [(ngModel)]="x">

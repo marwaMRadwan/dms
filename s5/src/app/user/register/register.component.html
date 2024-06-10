@@ -1,0 +1,26 @@
+<section class="container my-5">
+    <form #regiter="ngForm" (ngSubmit)="onRegister(regiter)">
+        <div class="mb-3">
+            <input name="userName" placeholder="userName" class="form-control"
+             required minlength="5" maxlength="30"
+             ngModel #userName="ngModel"
+             >
+            <div class="mt-2 alert alert-danger" *ngIf="userName.invalid && (userName.touched || userName.dirty || regiter.submitted)">
+                <li *ngIf="userName.errors?.['required']">UserName is required</li>
+                <li *ngIf="userName.errors?.['minlength']">UserName must have 5 chars</li>
+            </div>
+        </div>
+        <div class="mb-3">
+            <input name="email" placeholder="Email" class="form-control" ngModel #email="ngModel" email required minlength="3">
+            <div class="mt-2 alert alert-danger"  *ngIf="email.invalid && (email.touched || email.dirty || regiter.submitted)">
+                <li *ngIf="email.errors?.['required']">Error found</li>
+                <li *ngIf="email.errors?.['email']">Error found</li>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success" [disabled]="regiter.invalid">
+                Register
+            </button>
+        </div>
+    </form>
+</section>
