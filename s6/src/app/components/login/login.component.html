@@ -1,0 +1,10 @@
+<section class="container">
+    {{ _auth.isLoggedIn }}
+    {{ _auth.userData | json}}
+    {{login.value | json}}
+    <form [formGroup]="login" (ngSubmit)="logMeIn()"> 
+        <input placeholder="email" name="email" formControlName="email">
+        <input placeholder="password" formControlName="password">
+        <button>login</button>
+    </form>
+ </section>
