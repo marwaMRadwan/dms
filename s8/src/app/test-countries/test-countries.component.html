@@ -1,0 +1,12 @@
+<p>test-countries works!</p>
+{{selectedCountry}}
+<select name="country" [(ngModel)] = "selectedCountry" (change)="changeCountry()">
+    <option *ngFor="let country of countries" value="{{country.id}}">
+        {{country.name}}
+    </option>
+</select>
+<select name="states" >
+    <option *ngFor="let state of states" value="{{state.id}}">
+        {{state.name}}
+    </option>
+</select>

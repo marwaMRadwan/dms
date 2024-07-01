@@ -1,0 +1,20 @@
+<form [formGroup]="loginForm">
+    <input formControlName="fname" ><br>
+     <ul >
+        <!-- {{ loginForm.get('fname')?.errors | json}}
+       {{ loginForm.get('fname')?.hasError('minlength') }}
+        {{ loginForm.get('fname')?.hasError('required') }}
+         {{errMsg.fname | json}} -->
+        <li *ngFor="let err of errMsg.fname">
+            <p *ngIf="loginForm.get('fname')?.hasError(err.type)">
+                {{loginForm.get('fname')?.hasError(err.type)}}
+                {{ err.message}}
+            </p>
+        </li>
+    </ul>
+    <input formControlName="lname" ><br>
+    <input formControlName="email" ><br>
+    <input formControlName="password" ><br>
+    <input formControlName="rePassword" ><br>
+
+</form>
